@@ -1,0 +1,48 @@
+1. Inicio
+2. funcion principal()
+3. mensaje, x(1000)[{a-z}{A-Z}{BS}{$}]
+4. bandera <-- true
+5. salida ,x(1000)[{a-z}{A-Z}{BS}{$}]
+6. Mientras(bandera == true)
+7. 	Escribir "Escriba 1 para Ingresar autos.   Escriba 2 para ingresar motos"
+8. 	Leer mensaje
+9. 	Si mensaje == 1 entonces
+10. 		mensaje <-- ingresarAutos()
+11. 	Si mensaje == 2 entonces
+12. 		mensaje <-- ingresarMotos()
+13. 	De lo contario 
+14. 		Escrbir "Proceso incorrecto"
+15. 	Fin si.
+16. 	Escribir mensaje
+17. 	escribir "Escriba SALIR para terminar el proceso"
+18. 	Leer salida
+19. 	Si (salida == "SALIR" || salida == "salir" || salida == "Salir")
+20. 		bandera == false
+21. 	Fin si
+22. Fin mientras
+23. fin funcion principal()
+
+24 funcion ingresarAutos(): x(1000)[{a-z}{A-Z}{BS}{$}]	
+25. cadena, x(200)[{a-z}{A-Z}{BS}{$}]
+26. marca, x(1000)[{a-z}{A-Z}{BS}{$}]
+27. fabricacion, x(1000)[{a-z}{A-Z}{BS}{$}]
+28. Escribir "Cual es la marca del vehiculo"
+29. Leer marca
+30. Escribir "Cual es el año de fabricacion"
+31. Leer fabricacion
+32. cadena = "Auto marca " + marca + " con año de fabricacion " + fabricacion 
+33. Escribir cadena
+34. fin funcion ingresarAutos()
+
+35. funcion ingresarMotos(): x(1000)[{a-z}{A-Z}{BS}{$}]
+36. cadena, x(200)[{a-z}{A-Z}{BS}{$}]
+37. motor, x(1000)[{a-z}{A-Z}{BS}{$}]
+38. asientos, x(1000)[{a-z}{A-Z}{BS}{$}]
+39. Escribir "Que tipo de motor tiene"
+40. Leer motor
+41. Escribir "Cual es el numero de asientos"
+42. Leer asientos
+43. cadena = "Moto con motor a " + motor + " y con " + asientos + " asientos"
+44. Escribir cadena
+45. fin funcion ingresarMotos()
+46. Fin

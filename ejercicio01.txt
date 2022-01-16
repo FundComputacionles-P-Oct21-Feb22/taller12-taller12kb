@@ -1,0 +1,30 @@
+Dados los siguientes arreglos
+
+arreglo1(4), i[0-n] <-- {1, 2, 5, 6}
+arreglo2(4), i[0-n] <-- {9, 8, 7, 1}
+arreglo3(4), i[0-n] <-- {10, 18, 17, 10}
+
+Recorrer los mismos desde un método principal. En cada iteración se debe llamar a un procedimiento que reciba 3 parámetros (generarInformacion). El procedimiento debe realizar la 
+siguiente operación.
+
+m = (a**2 + b ** 2) + a*c
+
+1. Inicio
+2. funcion principal()
+3. mensaje, x(1000)[{a-z}{A-Z}{BS}{$}]
+4. arreglo1(4), i[0-n] <-- {1, 2, 5, 6}
+5. arreglo2(4), i[0-n] <-- {9, 8, 7, 1}
+6. arreglo3(4), i[0-n] <-- {10, 18, 17, 10}
+7. fila, i[0,n]
+8. Para(fila<--0, fila < 4, 1) haga
+9. generarInformacion(arreglo1[fila], arreglo2[fila], arreglo3[fila]) 
+10. fin funcion principal
+
+11. funcion generarInformacion(a, i[0,n]; b, i[0,n]; c, i[0,n]): i[0,n]
+12. cadena, x(200)[{a-z}{A-Z}{BS}{$}]
+13. operacion, d[0,n]
+14. operacion <-- (a**2 + b ** 2) + a*c
+15. cadena = "El valor de m es: " + operacion + " y los valores usados para la operacion son: " + a + ", " + b + ", " + c
+16. Escribir cadena
+17. fin funcion generarInformacion
+18. Fin
